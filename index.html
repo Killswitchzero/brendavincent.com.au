@@ -1,10 +1,254 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Brenda Vincent</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brenda Vincent | Music Industry Professional</title>
+    <style>
+        :root {
+            --bg-dark: #121212;
+            --bg-card: #1e1e1e;
+            --text-light: #f5f5f5;
+            --text-muted: #a0a0a0;
+            --accent: #d4af37;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0 20px;
+        }
+
+        .profile-img {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        .hero-title {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 2rem;
+            margin: 25px 0 10px;
+        }
+
+        .hero-subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        section {
+            background: var(--bg-card);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 6px;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 8px;
+        }
+
+        .split-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .split-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-left: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: var(--text-muted);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .side-gig-banner {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            background: #2a2a2a;
+            border: 1px solid #444;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        .btn {
+            background: #fff;
+            color: #000;
+            padding: 10px 25px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .social-links {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .social-links a {
+            color: var(--text-light);
+            margin: 0 10px;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to brendavincent.com.au</h1>
-    <p>Site under construction.</p>
+
+    <div class="container">
+        <!-- Header / Hero Section -->
+        <header>
+            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" alt="Brenda Vincent" class="profile-img">
+            <h1 class="hero-title">Creative Energy Unleashed</h1>
+            <p class="hero-subtitle">The first company to be promoted digitally globally for Universal Music Group, this is the new Chapter.</p>
+        </header>
+
+        <!-- Recent Work -->
+        <section>
+            <h2>Recent Work</h2>
+            <div class="split-grid">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80" style="width:100%; border-radius:4px;" alt="Live Show">
+                </div>
+                <div>
+                    <ul>
+                        <li>Featured Content</li>
+                        <li>Anthem 2026 Australian Tour</li>
+                        <li>Good Things Festival 2025 – official coverage & report</li>
+                        <li>Musica Nova – Music producer selection 2026</li>
+                        <li>Make Them Suffer – band content reported live above</li>
+                        <li>House of Protection – official footage tour content</li>
+                        <li>Jordan Fish (Producer: Beyond the Horizon, House of Protection)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bio & Past Awards -->
+        <section>
+            <h2>Welcome to Brenda Vincent!</h2>
+            <p style="margin-bottom: 15px;">A Creative strategist who has over 30yrs experience as a producer and band manager, a lifelong lover of music, film, and storytelling. Welcome to my world where I focus on "Music Artist Success in Today's World".</p>
+            <h3 style="margin-bottom: 10px; color: var(--accent);">Past Awards</h3>
+            <ul>
+                <li>Incl Clio Awards New York and Sydney.</li>
+                <li>Grammy nominated Chris Murphy INXS Management</li>
+            </ul>
+        </section>
+
+        <!-- Story Sections -->
+        <section>
+            <h2>My Story</h2>
+            <div style="margin-bottom: 20px;">
+                <h3 style="color: var(--text-muted);">The Beginning</h3>
+                <p>As a Television Commercial Producer, Personal Manager and Music Artist Manager my clients include just about every brand from Coca-Cola to L'Oreal alongside Australia and USA's top directors. Artists Sam Henderson, Rachel Griffiths, Members from U2, Blvd of Eyes, Offsite Traffic, Madonna, Prince, Midnight Oil, Dave Steel, Steve Williams with Delta Craig Moody, to Australian Rose Tattoo, Phil Emmanuel and many more. Right hand to Grammy nominated Manager Chris Murphy, Personal Manager of INXS Management. We launched the first global digital record label for Universal Music Group. Chris easily taught me invaluable knowledge and strategy about the Music Industry.</p>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <h3 style="color: var(--text-muted);">The Now</h3>
+                <p>As we enter the Advanced Intelligence era, I have learned and studied all the advantages, everything from Production Schedules, budgets to Financials. It is essential that everyone understands how advantageous this is. I do not hide AI for my imagery, writing or recording, but key for those music producers/bands who ended up in the rut that allows us less time on paperwork and more time for what I love, looking after my client's best interests.</p>
+            </div>
+            <div>
+                <h3 style="color: var(--text-muted);">My Philosophy</h3>
+                <p>I believe that music has the power to bring people together and create unforgettable experiences. My approach is to always look after my clients, my business, and with integrity and grit. I approach every event with this philosophy in mind, ensuring that every detail is perfect.</p>
+            </div>
+        </section>
+
+        <!-- Featured Media Section -->
+        <section>
+            <h2>Brenda Vincent Metallica</h2>
+            <p style="color: var(--text-muted); margin-bottom: 15px;">Kirk Hammett - Metallica up close & personal! #metallica #kirkhammett #live #australia</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/videoseries" title="YouTube video player" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Side Gig Banner -->
+        <div class="side-gig-banner" style="margin-bottom: 30px; border-radius: 6px;">
+            <h2 style="border:none; margin-bottom: 15px;">MY SIDE GIG! ORIGINAL ARTWORK, HAND PAINTED PIECES WITH A STORY BEHIND EACH ONE</h2>
+            <a href="#" class="btn">Find Out More</a>
+        </div>
+
+        <!-- Contact Section -->
+        <section>
+            <h2>Connect with Brenda</h2>
+            <p style="margin-bottom: 15px; color: var(--text-muted);">Let's Create Something Amazing!</p>
+            <form class="contact-form" action="#" method="post">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea rows="5" placeholder="How can Brenda help you?" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <div class="social-links">
+            <p style="margin-bottom: 10px; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;">Connect with Brenda</p>
+            <a href="https://facebook.com/brendavincentau" target="_blank">Facebook</a> | 
+            <a href="https://instagram.com/brendavincentau" target="_blank">Instagram</a>
+        </div>
+    </div>
+
 </body>
 </html>
