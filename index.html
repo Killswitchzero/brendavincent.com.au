@@ -123,27 +123,54 @@
             border: 0;
         }
 
-        .testimonials-grid {
+        /* Endorsements Grid & Card Styles */
+        .endorsements-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
             margin-top: 20px;
         }
 
-        .testimonial-card {
+        .endorsement-card {
             background: #252525;
             padding: 20px;
             border-radius: 6px;
             text-align: center;
+            border: 1px solid #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
         }
 
-        .testimonial-card img {
-            width: 90px;
-            height: 90px;
+        .endorsement-avatar {
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 12px;
             border: 2px solid var(--accent);
+        }
+
+        .endorsement-quote {
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .endorsement-name {
+            font-weight: bold;
+            color: var(--text-light);
+            font-size: 1.05rem;
+            margin-top: auto;
+        }
+
+        .endorsement-title {
+            font-size: 0.85rem;
+            color: var(--accent);
+            display: block;
+            margin-top: 4px;
         }
 
         .side-gig-banner {
@@ -269,57 +296,52 @@
         </section>
 
         <!-- Endorsements -->
-       <section id="endorsements" class="endorsements-section">
-  <h2>ENDORSEMENTS</h2>
-  <div class="endorsements-grid">
-    
-    <!-- Person 1 -->
-    <div class="endorsement-card">
-      <img src="rocky123" alt="Rocky" class="endorsement-avatar">
-      <p class="endorsement-quote">"I worked with Brenda many times over my rather long career.
-Thorough, amiable, easy to work with, professional and fun.
-On. Every. Single. Job.
-It would be hard to find a producer with this much experience.
-She herds artists, wrangles chaos, and still manages to make everything sound like it was the plan all along.
-Priceless."</p>
-      <h3 class="endorsement-name">Rocky Ranallo</h3>
-      <span class="endorsement-title">Creative DirectorFounder Rocky Inc</span>
-    </div>
+        <section id="endorsements" class="endorsements-section">
+          <h2>ENDORSEMENTS</h2>
+          <div class="endorsements-grid">
+            
+            <!-- Person 1 -->
+            <div class="endorsement-card">
+              <img src="rocky1213.jpg" alt="Rocky Ranallo" class="endorsement-avatar">
+              <p class="endorsement-quote">"I worked with Brenda many times over my rather long career. Thorough, amiable, easy to work with, professional and fun. On. Every. Single. Job. It would be hard to find a producer with this much experience. She herds artists, wrangles chaos, and still manages to make everything sound like it was the plan all along. Priceless."</p>
+              <div>
+                <h3 class="endorsement-name">Rocky Ranallo</h3>
+                <span class="endorsement-title">Creative Director / Founder Rocky Inc</span>
+              </div>
+            </div>
 
-    <!-- Person 2 -->
-    <div class="endorsement-card">
-      <img src="Steve512.jpg" alt="Steve" class="endorsement-avatar">
-      <p class="endorsement-quote">"I worked alongside Brenda when she was manager for Phil Emmanuel, who did support on Budgies Australia Tour in 2009,
- and can't praise her enough for her professional approach to, not just Phil's show needs, but everyone on the tour. 
- I'd recommend Brenda Vincent to any artist who wants to be looked after with care and trustworthy representation."</p>
-      <h3 class="endorsement-name">Steve Williams</h3>
-      <span class="endorsement-title">Drummer Budgie</span>
-    </div>
+            <!-- Person 2 -->
+            <div class="endorsement-card">
+              <img src="Steve4512.jpg" alt="Steve Williams" class="endorsement-avatar">
+              <p class="endorsement-quote">"I worked alongside Brenda when she was manager for Phil Emmanuel, who did support on Budgies Australia Tour in 2009, and can't praise her enough for her professional approach to, not just Phil's show needs, but everyone on the tour. I'd recommend Brenda Vincent to any artist who wants to be looked after with care and trustworthy representation."</p>
+              <div>
+                <h3 class="endorsement-name">Steve Williams</h3>
+                <span class="endorsement-title">Drummer Budgie</span>
+              </div>
+            </div>
 
-    <!-- Person 3 -->
-    <div class="endorsement-card">
-      <img src="kare1233.jpg" alt="Kare" class="endorsement-avatar">
-      <p class="endorsement-quote">"I saw Brenda go from new girl to a highly regarded senior producer in a relatively short time. 
-She achieved this by always being ready to rise to the challenge in front of her with grace, 
-good humour and determination.  She took on tasks that were seriously daunting rocket powered sharks, 
-explosions, deluges - and always lived to tell the tale. if you have the chance to work with her you should.
-"</p>
-      <h3 class="endorsement-name">Kare Godsell</h3>
-      <span class="endorsement-title">Producer</span>
-    </div>
+            <!-- Person 3 -->
+            <div class="endorsement-card">
+              <img src="kare1213.jpg" alt="Kare Godsell" class="endorsement-avatar">
+              <p class="endorsement-quote">"I saw Brenda go from new girl to a highly regarded senior producer in a relatively short time. She achieved this by always being ready to rise to the challenge in front of her with grace, good humour and determination. She took on tasks that were seriously daunting—rocket powered sharks, explosions, deluges—and always lived to tell the tale. If you have the chance to work with her you should."</p>
+              <div>
+                <h3 class="endorsement-name">Kare Godsell</h3>
+                <span class="endorsement-title">Producer</span>
+              </div>
+            </div>
 
-    <!-- Chris (Person 4) -->
-    <div class="endorsement-card">
-      <img src="Chris1112.jpg" alt="Chris" class="endorsement-avatar">
-      <p class="endorsement-quote">"Quote "I love having you in here in the office, not sure I want you to have the baby here on the floor though" with a cheeky smile oh his face! 
-I was 8 months with my son at the time -Chris Murphy, Petrol Records, INXS
-"</p>
-      <h3 class="endorsement-name">Chris</h3>
-      <span class="endorsement-title">Petrol Records INXS</span>
-    </div>
+            <!-- Person 4 -->
+            <div class="endorsement-card">
+              <img src="Chris1112.jpg" alt="Chris Murphy" class="endorsement-avatar">
+              <p class="endorsement-quote">"I love having you in here in the office, not sure I want you to have the baby here on the floor though!" (with a cheeky smile on his face as I was 8 months pregnant with my son at the time).</p>
+              <div>
+                <h3 class="endorsement-name">Chris Murphy</h3>
+                <span class="endorsement-title">Petrol Records / INXS</span>
+              </div>
+            </div>
 
-  </div>
-</section>
+          </div>
+        </section>
 
         <!-- Contact Section -->
         <section>
